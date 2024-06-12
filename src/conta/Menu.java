@@ -37,7 +37,7 @@ public class Menu {
 			opcao = sc.nextInt();
 
 			if (opcao == 9) {
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco do Brazul com Z - O seu futuro começa aqui!");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "\nITAÓ - O seu futuro começa aqui!");
 				sobre();
 				sc.close();
 				System.exit(0);
@@ -71,7 +71,7 @@ public class Menu {
 				break;
 
 			case 6:
-				System.out.println(Cores.TEXT_WHITE_BOLD + "Saqueln\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Saque\n\n");
 
 				break;
 
@@ -85,7 +85,7 @@ public class Menu {
 				break;
 
 			default:
-				System.out.println(Cores.TEXT_RED_BOLD + "\nOpção Invalidal\n");
+				System.out.println(Cores.TEXT_RED_BOLD + "\nOpção Invalida\n\n");
 
 			}
 		}
