@@ -3,6 +3,8 @@ package conta;
 import java.util.Scanner;
 
 import conta.model.ModelConta;
+import conta.model.ModelContaCorrente;
+import conta.model.ModelContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
@@ -10,14 +12,23 @@ public class Menu {
 	public static void main(String[] args) {
 						
 		Scanner sc = new Scanner(System.in);
+				
 		
-		ModelConta c1 = new ModelConta(1, 123, 1, "Adriana", 10000.0f);
+		// Teste da Classe Conta Corrente
+		ModelContaCorrente cc1 = new ModelContaCorrente(1, 123, 1, "José da Silva", 0.0f, 1000.0f);
+		cc1.visualizar();
+		cc1.sacar(12000.0f);
+		cc1.visualizar();
+		cc1.depositar(5000.0f);
+		cc1.visualizar();
 		
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
+        // Teste da Classe Conta Poupança
+		ModelContaPoupanca cp1 = new ModelContaPoupanca(2, 123, 2, "Maria dos Santos", 100000.0f, 15);
+		cp1.visualizar();
+        cp1.sacar(1000.0f);
+		cp1.visualizar();
+		cp1.depositar(5000.0f);
+		cp1.visualizar();
 
 		int opcao;
 

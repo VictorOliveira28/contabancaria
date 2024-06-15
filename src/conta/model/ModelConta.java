@@ -1,6 +1,6 @@
 package conta.model;
 
-public class ModelConta {
+public abstract class ModelConta {
 
 	private int numero;
 	private int agencia;
