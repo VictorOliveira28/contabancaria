@@ -2,7 +2,7 @@ package conta.repository;
 
 import conta.model.ModelConta;
 
-public interface ContaRepositort {
+public interface ContaRepository {
 
 	// CRUD da Conta
 		public void procurarPorNumero(int numero);
