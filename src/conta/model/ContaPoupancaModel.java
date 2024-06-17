@@ -1,10 +1,10 @@
 package conta.model;
 
-public class ModelContaPoupanca extends ModelConta{
+public class ContaPoupancaModel extends ContaModel{
 
 	private int aniversario;
 
-	public ModelContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int aniversario) {
+	public ContaPoupancaModel(int numero, int agencia, int tipo, String titular, float saldo, int aniversario) {
 		super(numero, agencia, tipo, titular, saldo);
 		this.aniversario = aniversario;
 	}

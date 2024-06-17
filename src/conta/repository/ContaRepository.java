@@ -1,14 +1,14 @@
 package conta.repository;
 
-import conta.model.ModelConta;
+import conta.model.ContaModel;
 
 public interface ContaRepository {
 
 	// CRUD da Conta
 		public void procurarPorNumero(int numero);
 		public void listarTodas();
-		public void cadastrar(ModelConta conta);
-		public void atualizar(ModelConta conta);
+		public void cadastrar(ContaModel conta);
+		public void atualizar(ContaModel conta);
 		public void deletar(int numero);
 		
 		// Métodos Bancários
